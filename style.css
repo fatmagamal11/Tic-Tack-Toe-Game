@@ -1,0 +1,169 @@
+* {
+  /* border: solid red; */
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  font-weight: 800;
+  text-align: center;
+}
+.container {
+  width: 60%;
+  height: 450px;
+  margin: 20px auto 20px;
+}
+.row {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.row .g {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.head {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+#reset button {
+  color: rgb(110, 110, 101);
+  border-radius: 25px;
+  font-size: 35px;
+  padding: 10px;
+}
+[class*="g"] {
+  width: 30%;
+  height: 30%;
+}
+
+#g0 {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+#g1 {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+#g2 {
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+#g3 {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+#g4 {
+  border: 1px solid gray;
+}
+
+#g5 {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+#g6 {
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+#g7 {
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+#g8 {
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+}
+#print {
+  color: red;
+}
+
+/* congratulates style */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #a1c387;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  text-align: center;
+  position: relative;
+  animation: fadeIn 1s;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.confetti::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  animation: confetti 5s linear infinite;
+}
+
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
