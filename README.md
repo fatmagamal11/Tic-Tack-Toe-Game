@@ -12,4 +12,3 @@ This project is a web-based Tic Tac Toe game that allows two players to play aga
 - Reset button to restart the game
 - Responsive design for different screen sizes
   
-I use HTML ,CSS and Js in this simple Project
